@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="label_pokemon">Pokemon</string>
+    <string name="label_add">Add</string>
+    <string name="label_hp">HP</string>
+    <string name="label_str">STR</string>
+    <string name="label_weak">WEAK</string>
+    <string name="label_search">Search</string>
+    <string name="label_confirm">Confirm</string>
+</resources>
