@@ -1,8 +1,7 @@
 package th.co.toei.domain.usecase
 
-import th.co.toei.core.base.BaseAsyncUseCase
-import th.co.toei.core.base.Resource
 import th.co.toei.domain.models.PokemonResponseModel
+import th.co.toei.domain.models.state.Resource
 import th.co.toei.domain.repositories.MainRepository
 import javax.inject.Inject
 

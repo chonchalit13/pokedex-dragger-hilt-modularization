@@ -3,6 +3,7 @@ buildscript {
 }
 
 dependencies {
-    api(project(":common-utils"))
-    api(project(":data"))
+    implementation(project(":common-utils"))
+    implementation(project(":data"))
+//    implementation(project(":domain"))
 }

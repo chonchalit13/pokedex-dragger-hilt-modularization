@@ -32,6 +32,13 @@ object NetworkModule {
 
     @Singleton
     @Provides
+    fun provideGson(): Gson = Gson().newBuilder()
+        .setLenient()
+        .setPrettyPrinting()
+        .create()
+
+    @Singleton
+    @Provides
     fun provideGsonConverter(gson: Gson): Converter.Factory = GsonConverterFactory.create(gson)
 
     @Singleton

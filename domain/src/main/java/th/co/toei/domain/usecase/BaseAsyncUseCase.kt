@@ -1,6 +1,7 @@
-package th.co.toei.core.base
+package th.co.toei.domain.usecase
 
 import retrofit2.Response
+import th.co.toei.domain.models.state.Resource
 
 abstract class BaseAsyncUseCase<in P, R> {
     abstract suspend fun execute(parameter: P): Resource<R>

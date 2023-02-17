@@ -4,5 +4,8 @@ buildscript {
 
 dependencies {
     implementation(project(":resource"))
-    api(project(":core"))
+    implementation(project(":common-utils"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
+    implementation(project(":core"))
 }
