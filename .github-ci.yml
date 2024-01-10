@@ -1,0 +1,16 @@
+stages:
+  - build
+
+build-dev:
+  stage: build
+  before_script:
+    - export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
+    - export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+    - echo "sdk.dir = /Users/$(whoami)/Library/Android/sdk" > local.properties
+  script:
+    - fastlane build_dev
+  tags:
+    - android
+  when: always
+  only:
+    - main
